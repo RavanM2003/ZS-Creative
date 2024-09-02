@@ -1,0 +1,51 @@
+.blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  flex-wrap: wrap;
+}
+.blogs .blog {
+  width: 32%;
+  height: 403px;
+  margin-bottom: 100px;
+}
+.blogs .blog .img {
+  width: 100%;
+  height: 254px;
+  position: relative;
+  overflow: hidden;
+}
+.blogs .blog .img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.blogs .blog .img img:hover {
+  transform: scale(1.15);
+}
+.blogs .blog .text {
+  width: 90%;
+  padding: 20px 0 40px 30px;
+  color: #000;
+  position: relative;
+  font-weight: bold;
+}
+.blogs .blog .text::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 132px;
+  background-color: #33C1FF;
+  top: 15px;
+  left: 15px;
+}
+.blogs .blog .readmore {
+  padding: 0 0 0 30px;
+  color: #33C1FF;
+  transition: 0.3s;
+}
+.blogs .blog .readmore:hover {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}/*# sourceMappingURL=blog.css.map */

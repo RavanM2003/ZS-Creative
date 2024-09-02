@@ -1,0 +1,66 @@
+@import './color';
+
+.header {
+    font-family: montreal, sans serif;
+    padding: 0 70px;
+}
+
+.service {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-family: montreal, sans serif;
+    padding: 0 150px;
+    .img {
+        img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            object-position: 100% 0;
+        }
+    }
+
+    .text {
+        width: 437px;
+
+        .header {
+            padding: 0;
+        }
+
+        .subtext {
+            margin: 20px 0;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            P {
+                width: 47%;
+                position: relative;
+                margin-right: 10px;
+                font-size: 12px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: lightgray;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -50px;
+                }
+            }
+        }
+        .projects{
+            a{
+                text-decoration: none;
+                color: $main-color;
+                font-size: 20px;
+            }
+        }
+    }
+}

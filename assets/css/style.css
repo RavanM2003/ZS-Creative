@@ -1,0 +1,818 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none !important;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 109px;
+  padding: 0 70px;
+  color: #363636;
+}
+header .logo {
+  width: 226px;
+}
+header .logo img {
+  width: 100%;
+}
+header .links {
+  width: 515px;
+  text-align: center;
+  font-family: Montreal, sans-serif;
+}
+header .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header .links ul li .active {
+  border-bottom: 2px solid #363636 !important;
+}
+header .links ul li a {
+  text-decoration: none;
+  color: #363636;
+}
+header .contact {
+  font-family: montreal, sans-serif;
+  border: 2px solid #363636;
+  width: 174px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+header .contact:hover {
+  background-color: #363636;
+  color: #fff;
+}
+
+.slider {
+  display: flex;
+  padding: 20px 70px 0 70px;
+  justify-content: space-between;
+}
+.slider .text {
+  width: 50%;
+}
+.slider .text .main-text h1 {
+  color: #363636;
+  font-family: Montreal, sans serif;
+  font-size: 80px;
+}
+.slider .text .main-text .span-text {
+  text-align: center;
+  position: relative;
+}
+.slider .text .main-text .span-text h1 {
+  width: 75%;
+  margin-top: 10px;
+  font-size: 90px;
+  border: 2px solid #33C1FF;
+  color: #33C1FF;
+  margin-left: 10px;
+  padding: 0 20px;
+}
+.slider .text .main-text .span-text .tl,
+.slider .text .main-text .span-text .tr,
+.slider .text .main-text .span-text .bl,
+.slider .text .main-text .span-text .br {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border: 3px solid #33C1FF;
+}
+.slider .text .main-text .span-text .tl {
+  top: -10px;
+  left: 0px;
+}
+.slider .text .main-text .span-text .tr {
+  top: -10px;
+  right: 135px;
+}
+.slider .text .main-text .span-text .bl {
+  bottom: -10px;
+  left: 0px;
+}
+.slider .text .main-text .span-text .br {
+  bottom: -10px;
+  right: 135px;
+}
+.slider .text .subtext {
+  width: 80%;
+  margin: 30px 0;
+}
+.slider .text .subtext p {
+  font-family: montreal, sans serif;
+}
+.slider .text .subtext p span {
+  color: #33C1FF;
+  font-family: montreal, sans serif;
+  font-weight: bold;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  margin-left: 10px;
+}
+.slider .text .form form input {
+  width: 48%;
+  padding: 20px 25px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+.slider .text .form form input::-moz-placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+.slider .text .form form input::placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+.slider .text .form form button {
+  width: 30%;
+  padding: 18px 32px;
+  outline: none;
+  background-color: #363636;
+  border: 0;
+  color: #fff;
+  font-family: montreal, sans serif;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.slider .text .form form button:hover {
+  color: #363636;
+  background-color: #fff;
+  border: 1px solid #363636;
+}
+
+.partnerships {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  font-size: 14px;
+  color: #000;
+  margin: 10px 0;
+}
+.partnerships h1 {
+  font-family: montreal, sans serif;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 70px;
+  color: #363636;
+}
+.partnerships .swiper {
+  width: 100%;
+  height: 50px;
+}
+.partnerships .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.partnerships .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.marketing {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/marketing.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.marketing .text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: montreal, sans serif;
+  font-size: 160px;
+  z-index: 1;
+}
+.marketing .bluebg {
+  position: absolute;
+  width: 750px;
+  height: 150px;
+  background-color: #33C1FF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+.marketing .text1 {
+  position: absolute;
+  font-family: montreal, sans serif;
+  font-size: 160px;
+  top: 10%;
+  left: 5%;
+  filter: drop-shadow(0 0 1rem #fff);
+}
+
+.whatwedo {
+  display: flex;
+  padding: 70px;
+  margin: 70px 0;
+  color: #363636;
+}
+.whatwedo .text {
+  width: 50%;
+}
+.whatwedo .text .header {
+  font-family: montreal, sans serif;
+  color: #33C1FF;
+  margin: 30px 0;
+  font-size: 24px;
+}
+.whatwedo .text .maintext {
+  font-family: montreal, sans serif;
+  font-size: 25px;
+  line-height: 63px;
+}
+.whatwedo .text .subtext {
+  font-size: 18px;
+  margin: 40px 0;
+  font-family: montreal, sans serif;
+}
+.whatwedo .image {
+  position: relative;
+  width: 50%;
+}
+.whatwedo .image .tlimg {
+  position: absolute;
+  top: 5px;
+  left: 125px;
+  width: 316.17px;
+  height: 321.93px;
+  border-radius: 500px 0 0 0;
+  background-image: url(../img/whatwedo1.jpg);
+  background-size: cover;
+}
+.whatwedo .image .trimg {
+  position: absolute;
+  width: 203.13px;
+  height: 206.83px;
+  border-radius: 0 500px 0 0;
+  background-color: #FF5733;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 10px;
+  top: 118.8px;
+  left: 450px;
+}
+.whatwedo .image .trimg p {
+  font-size: 50px;
+  font-family: montreal, sans serif;
+  color: #fff;
+}
+.whatwedo .image .blimg {
+  position: absolute;
+  width: 203.13px;
+  height: 206.83px;
+  border-radius: 0 0 0 500px;
+  background-color: #363636;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  padding: 10px;
+  top: 335px;
+  left: 125px;
+}
+.whatwedo .image .blimg p {
+  font-size: 50px;
+  font-family: montreal, sans serif;
+  color: #fff;
+}
+.whatwedo .image .brimg {
+  position: absolute;
+  top: 335px;
+  left: 340px;
+  width: 316.17px;
+  height: 321.93px;
+  border-radius: 0 0 500px 0;
+  background-image: url(../img/whatwedo2.jpg);
+  background-size: cover;
+}
+
+.specialize {
+  font-family: montreal, sans serif;
+  color: #363636;
+  position: relative;
+  margin-bottom: 700px;
+}
+.specialize .header {
+  margin: 150px 0 100px 0;
+  padding: 0 70px;
+  position: relative;
+  z-index: 2;
+  color: #33C1FF;
+  font-size: 20px;
+}
+.specialize .branding,
+.specialize .webdev,
+.specialize .seo,
+.specialize .uxui,
+.specialize .wordpress {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+.specialize .branding span,
+.specialize .webdev span,
+.specialize .seo span,
+.specialize .uxui span,
+.specialize .wordpress span {
+  display: none;
+}
+.specialize .branding h1,
+.specialize .webdev h1,
+.specialize .seo h1,
+.specialize .uxui h1,
+.specialize .wordpress h1 {
+  position: absolute;
+  padding: 0 100px;
+  z-index: 1;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.specialize .branding h1:hover,
+.specialize .webdev h1:hover,
+.specialize .seo h1:hover,
+.specialize .uxui h1:hover,
+.specialize .wordpress h1:hover {
+  left: 30px;
+}
+.specialize .branding h1:hover span,
+.specialize .webdev h1:hover span,
+.specialize .seo h1:hover span,
+.specialize .uxui h1:hover span,
+.specialize .wordpress h1:hover span {
+  display: initial;
+}
+.specialize .branding img,
+.specialize .webdev img,
+.specialize .seo img,
+.specialize .uxui img,
+.specialize .wordpress img {
+  width: 100%;
+  position: absolute;
+  top: -150px;
+}
+.specialize .webdev {
+  top: 200px;
+}
+.specialize .webdev img {
+  width: 100%;
+  position: absolute;
+  top: -220px;
+}
+.specialize .seo {
+  top: 260px;
+}
+.specialize .seo img {
+  width: 100%;
+  position: absolute;
+  top: -280px;
+}
+.specialize .uxui {
+  top: 320px;
+}
+.specialize .uxui img {
+  width: 100%;
+  position: absolute;
+  top: -340px;
+}
+.specialize .wordpress {
+  top: 380px;
+}
+.specialize .wordpress img {
+  position: absolute;
+  height: 115vh;
+  left: 50%;
+  top: -400px;
+  width: 50%;
+}
+
+.blogsection {
+  margin: 50px 0;
+  padding: 0 70px;
+  font-family: montreal, sans serif;
+  color: #363636;
+}
+.blogsection .header {
+  margin-bottom: 40px;
+}
+.blogsection .header h1 {
+  color: #33C1FF;
+}
+.blogsection .subscribetext {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blogsection .subscribetext p {
+  width: 70%;
+}
+.blogsection .subscribetext a {
+  border: 1px solid #363636;
+  padding: 15px 25px;
+  transition: 0.3s;
+}
+.blogsection .subscribetext a:hover {
+  background-color: #363636;
+  color: #fff;
+}
+.blogsection .blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blogsection .blogs .blog {
+  width: 32%;
+  margin-bottom: 100px;
+}
+.blogsection .blogs .blog .img {
+  width: 100%;
+  height: 254px;
+  position: relative;
+  overflow: hidden;
+}
+.blogsection .blogs .blog .img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.blogsection .blogs .blog .img img:hover {
+  transform: scale(1.15);
+}
+.blogsection .blogs .blog .text {
+  width: 90%;
+  padding: 20px 0 40px 30px;
+  color: #000;
+  position: relative;
+  font-weight: bold;
+}
+.blogsection .blogs .blog .text::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 132px;
+  background-color: #33C1FF;
+  top: 15px;
+  left: 15px;
+}
+.blogsection .blogs .blog .readmore {
+  padding: 0 0 0 30px;
+  color: #33C1FF;
+  transition: 0.3s;
+}
+.blogsection .blogs .blog .readmore:hover {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.contacussection {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  background-color: #F4F4F6;
+  font-family: montreal, sans serif;
+}
+.contacussection .form {
+  width: 40%;
+}
+.contacussection .form .header {
+  padding: 30px 0 10px 40px;
+  font-family: montreal, sans serif;
+  font-size: 25px;
+}
+.contacussection .form .text {
+  padding: 0 0 40px 40px;
+  font-family: montreal, sans serif;
+  font-size: 15px;
+}
+.contacussection .form form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.contacussection .form form .firstname,
+.contacussection .form form .lastname {
+  width: 45%;
+  margin-right: 20px;
+}
+.contacussection .form form .firstname input,
+.contacussection .form form .lastname input {
+  width: 100%;
+  outline: 0;
+  border: 1px solid lightgray;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.contacussection .form form .email,
+.contacussection .form form .phonenumber {
+  width: 100%;
+}
+.contacussection .form form .email input,
+.contacussection .form form .phonenumber input {
+  width: 95%;
+  outline: 0;
+  border: 1px solid lightgray;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.contacussection .form form .message {
+  width: 100%;
+}
+.contacussection .form form .message textarea {
+  resize: none;
+  width: 95%;
+  height: 130px;
+  outline: 0;
+  border: 1px solid lightgray;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.contacussection .form form .agreement {
+  font-family: montreal, sans serif;
+  margin-bottom: 1rem;
+}
+.contacussection .form form .agreement span {
+  text-decoration: underline;
+}
+.contacussection .form form .button {
+  width: 95%;
+  background-color: #363636;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+.contacussection .form form .button:hover {
+  background-color: #fff;
+  border: 1px solid #363636;
+  color: #363636;
+}
+.contacussection .image {
+  width: 60%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.contacussection .image p {
+  width: 80%;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  color: #fff;
+}
+.contacussection .image img {
+  width: 100%;
+  height: 700px;
+  transition: 0.3s;
+}
+.contacussection .image img:hover {
+  transform: scale(1.1);
+}
+
+.clients {
+  font-family: montreal, sans-serif;
+  font-size: 14px;
+  color: #363636;
+  margin: 30px 0;
+  padding: 0;
+}
+.clients .header {
+  text-align: center;
+  margin: 30px 0;
+  color: #33C1FF;
+  font-size: 20px;
+}
+.clients .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.clients .swiper .swiper-slide {
+  background-color: #fff;
+  min-height: 182px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  box-shadow: 0px 14px 22px 0px rgb(201, 201, 201);
+  border-radius: 16px;
+}
+.clients .swiper .swiper-slide .text {
+  margin: 20px 0;
+}
+.clients .swiper .swiper-slide .text span {
+  color: #33C1FF;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+.clients .swiper .swiper-slide .imagename {
+  display: flex;
+  align-items: center;
+}
+.clients .swiper .swiper-slide .imagename img {
+  margin-right: 1rem;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+footer {
+  overflow: hidden;
+  position: relative;
+}
+footer .background {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  background-color: #000;
+  opacity: 0.9;
+}
+footer .background svg {
+  opacity: 0.1;
+}
+footer .background .svg1 {
+  position: absolute;
+  right: 0;
+  width: 691px;
+  height: 137px;
+}
+footer .background .svg1 svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .background .svg2 {
+  position: absolute;
+  right: 0;
+  width: 940px;
+  height: 189px;
+}
+footer .background .svg2 svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .background .svg3 {
+  position: absolute;
+  right: 0;
+  top: 210px;
+  width: 1435px;
+  height: 354px;
+}
+footer .background .svg3 svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .background .svg4 {
+  position: absolute;
+  right: 0;
+  top: 263px;
+  width: 1435px;
+  height: 307px;
+}
+footer .background .svg4 svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .header {
+  position: absolute;
+  top: 100px;
+  padding: 0 50px;
+}
+footer .header img {
+  filter: grayscale(100%);
+}
+footer .footersection .left .input {
+  padding: 0 50px;
+  width: 100%;
+  position: absolute;
+  top: 200px;
+}
+footer .footersection .left .input .form form input {
+  width: 300px;
+  background-color: transparent;
+  padding: 18px 25px;
+  outline: none;
+  border: 1px solid lightgray;
+  color: white;
+}
+footer .footersection .left .input .form form input::-moz-placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+footer .footersection .left .input .form form input::placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+footer .footersection .left .input .form form button {
+  width: 10%;
+  padding: 18px 20px;
+  outline: none;
+  color: #363636;
+  background-color: #fff;
+  border: 1px solid #363636;
+  font-family: montreal, sans serif;
+  transition: 0.3s;
+}
+footer .footersection .left .input .form form button:hover {
+  color: #363636;
+  background-color: transparent;
+  border: 1px solid #363636;
+}
+footer .footersection .left .text {
+  padding: 0 50px;
+  font-family: montreal, sans serif;
+  width: 550px;
+  position: absolute;
+  top: 300px;
+  color: #fff;
+}
+footer .footersection .left .social {
+  padding: 0 50px;
+  width: 505px;
+  position: absolute;
+  top: 400px;
+}
+footer .footersection .left .social i {
+  border-radius: 50%;
+  font-size: 20px;
+  color: #363636;
+  background-color: #fff;
+}
+footer .footersection .right .servicegeneral {
+  display: flex;
+}
+footer .footersection .right .servicegeneral ul {
+  font-family: montreal, sans serf;
+  list-style: none;
+}
+footer .footersection .right .servicegeneral ul li {
+  margin-bottom: 10px;
+}
+footer .footersection .right .servicegeneral ul li:first-child {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+footer .footersection .right .servicegeneral .service {
+  padding: 0 50px;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  color: #fff;
+  left: 600px;
+  font-size: 20px;
+}
+footer .footersection .right .servicegeneral .genereal {
+  padding: 0 50px;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  color: #fff;
+  left: 900px;
+  font-size: 20px;
+}
+footer .footersection .right .copyright {
+  padding: 0 50px;
+  width: 100%;
+  position: absolute;
+  top: 400px;
+  color: #fff;
+  left: 600px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.header {
+  font-family: montreal, sans serif;
+  padding: 0 70px;
+}
+
+.service {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-family: montreal, sans serif;
+  padding: 0 150px;
+}
+.service .img img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+}
+.service .text {
+  width: 437px;
+}
+.service .text .header {
+  padding: 0;
+}
+.service .text .subtext {
+  margin: 20px 0;
+}
+.service .text .features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.service .text .features P {
+  width: 47%;
+  position: relative;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.service .text .features P::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: lightgray;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+}
+.service .text .projects a {
+  text-decoration: none;
+  color: #363636;
+  font-size: 20px;
+}/*# sourceMappingURL=service.css.map */
